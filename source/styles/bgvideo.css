@@ -1,0 +1,35 @@
+.bgvideo {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20%;
+}
+
+.bgvideo video {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; /*Если поля видео не вмещаются, то они будут обрезаны по контейнеру bgvideo*/
+    z-index: 1; /*Т.к. контейнер флекс, то применяем слои, это слой 1*/
+}
+
+.effect {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover; /*Если поля видео не вмещаются, то они будут обрезаны по контейнеру bgvideo*/
+    z-index: 2; /*Т.к. контейнер флекс, то применяем слои, это слой 2*/
+    background-color: rgba(0, 0, 0, 0.127);
+}
+
+.video-text {
+    color: rgb(180, 244, 237);
+    z-index: 2; /*А это слой 2*/
+}
